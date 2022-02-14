@@ -23,3 +23,10 @@ title_from_headings:
 jekyll-archives:
   enabled: all
   layout: archive
+
+defaults:
+  -
+    scope:
+      path: "*.md" 
+    values:
+      layout: "post"
