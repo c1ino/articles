@@ -30,3 +30,4 @@ defaults:
       path: "*.md" 
     values:
       layout: "post"
+      author: "c1ino"
