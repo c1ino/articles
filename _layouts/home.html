@@ -26,7 +26,9 @@ layout: default
       {%- for post in posts -%}
       <li>
         {% assign pdate = post.date %}
-        <span class="post-meta">{{ post.published_at | default: pdate | date: date_format }}</span>
+        <span class="post-meta">{{ post.published_at | default: pdate | default: "now" | date: date_format }}
+          [{{ pdate | inspect }}]
+        </span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
