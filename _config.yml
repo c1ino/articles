@@ -1,0 +1,35 @@
+#theme: minima
+remote_theme: jekyll/minima
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+ - jekyll-sitemap
+ - jekyll-titles-from-headings
+ - jekyll-archives
+ 
+title: Your awesome title
+author:
+  name: GitHub User
+  email: your-email@domain.com
+description: > # this means to ignore newlines until "show_excerpts:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+
+title_from_headings:
+  #enabled:     false
+  strip_title: true
+
+jekyll-archives:
+  enabled: all
+  layout: archive
+
+defaults:
+  -
+    scope:
+      path: "*.md" 
+    values:
+      layout: "post"
+      author: "c1ino"
+
+page_excerptstrue: true
