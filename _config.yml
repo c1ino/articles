@@ -3,8 +3,9 @@ remote_theme: jekyll/minima
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
- - jekyll-sitemap
+# - jekyll-sitemap
  - jekyll-titles-from-headings
+ - jekyll-archives
  
 title: Your awesome title
 author:
