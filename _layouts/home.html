@@ -13,7 +13,7 @@ layout: default
   {% if site.paginate %}
     {% assign posts = paginator.pages %}
   {% else %}
-    {% assign posts = site.pages | concat: site.posts %}
+    {% assign posts = site.posts | concat: site.pages %}
   {% endif %}
 
 
