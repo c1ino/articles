@@ -16,4 +16,12 @@ test cate 11 page
 
 {{page.name}}
 
+{{site.collections|inspect}}
+
+{{site.categories|inspect}}
+
+{{site.pages|inspect}}
+
+{{site.documents|inspect}}
+
 {{page|inspect}}
