@@ -1,5 +1,6 @@
 ---
 date: 2023-01-07
+collection: test
 ---
 test cate 11 page
 
@@ -15,4 +16,4 @@ test cate 11 page
 
 {{page.name}}
 
-{{page|inspect|escape}}
+{{page|inspect}}
