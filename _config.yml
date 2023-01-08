@@ -33,3 +33,4 @@ defaults:
       author: "c1ino"
 
 page_excerptstrue: true
+show_drafts: true
