@@ -11,4 +11,8 @@ test cate 11 page
 
 [collection]{{page.collection}}
 
-{{page|inspect}}
+{{page.dir}}
+
+{{page.name}}
+
+{{page|inspect|escape}}
