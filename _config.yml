@@ -34,3 +34,4 @@ defaults:
 
 page_excerptstrue: true
 show_drafts: true
+permalink: date
