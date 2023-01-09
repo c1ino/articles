@@ -20,13 +20,13 @@ test cate 11 page
 {%endraw%}
 
 [categories]
-{{site.categories|jsonify}}
+{{site.categories|inspect}}
 
 [pages]
-{{site.pages|jsonify}}
+{{site.pages|inspect}}
 
 [documents]
-{{site.documents|jsonify}}
+{{site.documents|inspect}}
 
 [page]
-{{page|jsonify}}
+{{page|inspect}}
