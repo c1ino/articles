@@ -5,14 +5,19 @@ collection: test
 test cate 11 page
 
 
+[path]
 {{page.path}}
 
-[cate]{{page.categories}}
+[cate]
+{{page.categories}}
 
-[collection]{{page.collection}}
+[collection]
+{{page.collection}}
 
+[dir]
 {{page.dir}}
 
+[name]
 {{page.name}}
 
 {%raw%}
@@ -28,8 +33,13 @@ test cate 11 page
 [documents]
 {{site.documents|inspect}}
 
+[posts]
+{{site.posts|inspect}}
+
+{%raw%}
 [static_files]
 {{site.static_files|inspect}}
+{%endraw%}
 
 [page]
 {{page|inspect}}
