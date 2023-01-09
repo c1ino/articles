@@ -15,9 +15,9 @@ test cate 11 page
 
 {{page.name}}
 
-{%comment%}
+{%raw%}
 {{site.collections|inspect}}
-{%endcomment%}
+{%endraw%}
 
 [categories]
 {{site.categories|jsonify}}
