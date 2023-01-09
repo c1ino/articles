@@ -19,14 +19,14 @@ test cate 11 page
 {{site.collections|inspect}}
 {%endcomment%}
 
-{%
-# {{site.collections|inspect}}
-%}
-
+[categories]
 {{site.categories|jsonify}}
 
+[pages]
 {{site.pages|jsonify}}
 
+[documents]
 {{site.documents|jsonify}}
 
+[page]
 {{page|jsonify}}
