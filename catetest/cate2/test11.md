@@ -4,7 +4,6 @@ collection: test
 ---
 test cate 11 page
 
-{{ page.path }}
 
 {{page.path}}
 
@@ -16,12 +15,12 @@ test cate 11 page
 
 {{page.name}}
 
-{{site.collections|inspect}}
+{{#site.collections|inspect}}
 
-{{site.categories|inspect}}
+{{site.categories|jsonify}}
 
-{{site.pages|inspect}}
+{{site.pages|jsonify}}
 
-{{site.documents|inspect}}
+{{site.documents|jsonify}}
 
-{{page|inspect}}
+{{page|jsonify}}
