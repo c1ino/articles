@@ -15,7 +15,9 @@ test cate 11 page
 
 {{page.name}}
 
-{#{site.collections|inspect}}
+{%#
+{{site.collections|inspect}}
+%}
 
 {{site.categories|jsonify}}
 
