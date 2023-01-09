@@ -16,6 +16,7 @@ test cate 11 page
 
 [dir]
 {{page.dir}}
+{{page.dir|split:"/"|inspect}}
 
 [name]
 {{page.name}}
