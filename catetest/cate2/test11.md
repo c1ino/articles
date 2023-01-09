@@ -28,5 +28,8 @@ test cate 11 page
 [documents]
 {{site.documents|inspect}}
 
+[static_files]
+{{site.static_files|inspect}}
+
 [page]
 {{page|inspect}}
