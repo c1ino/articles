@@ -22,6 +22,7 @@ test site.data.json
 ```
 {{site.data.test_cmt[0].body|markdownify}}
 ```
+
 |1|2|
 |-|-|
 | {{site.data.test_cmt[0].body|markdownify}} |2|
@@ -29,6 +30,7 @@ test site.data.json
 ```
 {{site.data.test_cmt[0].body|markdownify|strip_newlines}}
 ```
+
 |1|2|
 |-|-|
 | {{site.data.test_cmt[0].body|markdownify|strip_newlines}} |2|
@@ -36,6 +38,7 @@ test site.data.json
 
 
 [test table]
+
 |1|2|
 |-|-|
 |<img> <input> <button>[but]</button> | eot |
