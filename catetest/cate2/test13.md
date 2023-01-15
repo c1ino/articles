@@ -1,6 +1,10 @@
 [test-data]
 {{site.data|size}}
 
+{%for x in size.data%}
+- {{forloop|inspect}}
+{%-endfor%}
+
 [test-folder]
 {{site.data.folder|size}}
 
@@ -10,8 +14,8 @@
 
 
 [md]
-|id|time|body| 
-|-|-|-|
+|id/time|body| 
+|-|-|
 {% for x in site.data.test_cmt -%}
 | [{{x.id}}]({{x.html_url}}) <br>{{x.created_at}}<br>{{x.updated_at}} | {{x.body|markdownify|strip_newlines-}} | 
 {%endfor%}
