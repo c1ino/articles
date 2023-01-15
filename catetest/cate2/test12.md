@@ -33,3 +33,9 @@ test site.data.json
 |-|-|
 | {{site.data.test_cmt[0].body|markdownify|strip_newlines}} |2|
 
+
+
+[test table]
+|1|2|
+|-|-|
+|<img> <input> <button>[but]</button> | eot |
