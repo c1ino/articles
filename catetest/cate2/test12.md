@@ -20,21 +20,21 @@ test site.data.json
 [test escape]
 
 ```
-{{site.data.test_cmt[0].body|markdownify}}
+{{site.data.test_cmt[0].body|markdownify|replace:"|","\|"}}
 ```
 
 |1|2|
 |-|-|
-| {{site.data.test_cmt[0].body|markdownify}} |2|
+| {{site.data.test_cmt[0].body|markdownify|replace:"|","\|"}} |2|
 
 
 ```
-{{site.data.test_cmt[0].body|markdownify|strip_newlines}}
+{{site.data.test_cmt[0].body|markdownify|strip_newlines|replace:"|","\|"}}
 ```
 
 |1|2|
 |-|-|
-| {{site.data.test_cmt[0].body|markdownify|strip_newlines}} |2|
+| {{site.data.test_cmt[0].body|markdownify|strip_newlines|replace:"|","\|"}} |2|
 
 
 ```
@@ -56,3 +56,11 @@ test site.data.json
 |1|2|
 |-|-|
 |<ul><li>3a</li></ul> <ul><li><ul><li>3b</li></ul></li></ul> | eot |
+
+|1|2|
+|-|-|
+|<ul><li>3a</li></ul>| eot |
+
+|1|2|
+|-|-|
+| <ul><li><ul><li>3b</li></ul></li></ul> | eot |
