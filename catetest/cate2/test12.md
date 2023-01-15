@@ -13,7 +13,7 @@ test site.data.json
 |id|time|body| 
 |-|-|-|
 {% for x in site.data.test_cmt -%}
-| {{x.id}} | {{x.updated_at}} | {{x.body|markdownify|strip_newlines-}} | 
+| {{x.id}} | {{x.updated_at}} | {{x.body|newline_to_br-}} | 
 {%endfor%}
 
 
