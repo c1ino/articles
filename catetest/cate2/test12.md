@@ -17,6 +17,7 @@ test site.data.json
     <td> {{x.id}} </td>
     <td> {{x.updated_at}} </td>
     <td> 
+      
 {{x.body}} </td>
   </tr>
 {%endfor%}
