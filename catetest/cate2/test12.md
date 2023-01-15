@@ -9,9 +9,8 @@ test site.data.json
 {{site.data.test_cmt|size}}
 
 
-```
+
 |id|time|body| 
 {% for x in site.data.test_cmt -%}
-| {{x.id}} | {{x.updated_at}} | {{x.body|markdownify-}} | 
+| {{x.id}} | {{x.updated_at}} | {{x.body|markdownify|strip_newlines-}} | 
 {%endfor%}
-```
