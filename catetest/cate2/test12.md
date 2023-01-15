@@ -24,7 +24,7 @@ test site.data.json
 |id|time|body| 
 |-|-|-|
 {% for x in site.data.test_cmt -%}
-| {{x.id}} | {{x.updated_at}} | {{x.body|newline_to_br-}} | 
+| {{x.id}} | {{x.updated_at}} | {{x.body|newline_to_br|strip_newlines-}} | 
 {%endfor%}
 
 
