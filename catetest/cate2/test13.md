@@ -3,7 +3,10 @@
 
 /*
 {%for x in size.data%}
-- {{forloop|inspect}}
+[x]
+{{x[0]}} / {{x[1]|size}}
+[forloop]
+{{forloop|jsonify}}
 {%-endfor%}
 */
 
