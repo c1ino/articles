@@ -1,9 +1,11 @@
 [test-data]
 {{site.data|size}}
 
+/*
 {%for x in size.data%}
 - {{forloop|inspect}}
 {%-endfor%}
+*/
 
 [test-folder]
 {{site.data.folder|size}}
@@ -11,6 +13,7 @@
 
 [test-cmt]
 {{site.data.test_cmt|size}}
+
 
 
 [md]
@@ -21,6 +24,15 @@
 {%endfor%}
 
 
+
+{%comment%}
+[tablerow]
+<table>
+{% tablerow x in site.data.test_cmt %}
+  {{ product.title }}
+{% endtablerow %}
+</table>
+{%endcomment%}
 
 
 [html]
