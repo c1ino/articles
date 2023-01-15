@@ -10,6 +10,14 @@ test site.data.json
 
 
 
+
+|id|time|body| 
+|-|-|-|
+{% for x in site.data.test_cmt -%}
+| {{x.id}} | {{x.updated_at}} | {{x.body|markdownify|strip_newlines-}} | 
+{%endfor%}
+
+
 <table>
 {% for x in site.data.test_cmt -%}
   <tr>
@@ -21,11 +29,13 @@ test site.data.json
 </table>
 
 
+{%comment%}
 |id|time|body| 
 |-|-|-|
 {% for x in site.data.test_cmt -%}
 | {{x.id}} | {{x.updated_at}} | {{x.body|newline_to_br|strip_newlines-}} | 
 {%endfor%}
+{%endcomment%}
 
 
 [test escape]
