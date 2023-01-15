@@ -8,7 +8,6 @@ test site.data.json
 [test-cmt]
 {{site.data.test_cmt|size}}
 
-|id|time|body|
-{%- for x in site.data.test_cmt -%}
+|id|time|body| {% for x in site.data.test_cmt %}
 |{{x.id}}|{{x.updated_at}}|{{x.body|newline_to_br}}|
 {%endfor%}
