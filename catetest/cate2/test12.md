@@ -43,7 +43,7 @@ test site.data.json
 
 |1|2|
 |-|-|
-|  {{site.data.test_cmt[0].body|markdownify|replace: "\n"," "}}  |2|
+|  {{site.data.test_cmt[0].body|markdownify|replace: "\r\n",""}}  |2|
 
 
 
