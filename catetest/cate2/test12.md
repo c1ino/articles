@@ -27,6 +27,7 @@ test site.data.json
 |-|-|
 | {{site.data.test_cmt[0].body|markdownify}} |2|
 
+
 ```
 {{site.data.test_cmt[0].body|markdownify|strip_newlines}}
 ```
@@ -34,6 +35,15 @@ test site.data.json
 |1|2|
 |-|-|
 | {{site.data.test_cmt[0].body|markdownify|strip_newlines}} |2|
+
+
+```
+{{site.data.test_cmt[0].body|markdownify|replace: "\n"," "}}
+```
+
+|1|2|
+|-|-|
+|  {{site.data.test_cmt[0].body|markdownify|replace: "\n"," "}}  |2|
 
 
 
