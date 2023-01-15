@@ -21,12 +21,12 @@ test site.data.json
 ```
 {{site.data.test_cmt[0].body|markdownify}}
 ```
-|_|_|
-| {{site.data.test_cmt[0].body|markdownify}} ||
+|1|2|
+| {{site.data.test_cmt[0].body|markdownify}} |2|
 
 ```
 {{site.data.test_cmt[0].body|markdownify|strip_newlines}}
 ```
-|_|_|
-| {{site.data.test_cmt[0].body|markdownify|strip_newlines}} ||
+|1|2|
+| {{site.data.test_cmt[0].body|markdownify|strip_newlines}} |2|
 
