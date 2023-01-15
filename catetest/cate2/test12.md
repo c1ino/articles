@@ -38,12 +38,12 @@ test site.data.json
 
 
 ```
-{{site.data.test_cmt[0].body|markdownify|replace: "\n"," "}}
+{{site.data.test_cmt[0].body|markdownify|replace: "\r",""}}
 ```
 
 |1|2|
 |-|-|
-|  {{site.data.test_cmt[0].body|markdownify|replace: "\r\n",""}}  |2|
+|  {{site.data.test_cmt[0].body|markdownify|replace: "\r",""}}  |2|
 
 
 
@@ -52,3 +52,7 @@ test site.data.json
 |1|2|
 |-|-|
 |<img> <input> <button>[but]</button> | eot |
+
+|1|2|
+|-|-|
+|<ul><li>3a</li></ul> <ul><li><ul><li>3b</li></ul></li></ul> | eot |
