@@ -10,5 +10,5 @@ test site.data.json
 
 |id|time|body|
 {% for x in site.data.test_cmt %}
-|{{x.id}}|{{x.updated_at}}|{{x.body}}|
+|{{x.id}}|{{x.updated_at}}|{{x.body|strip_newlines}}|
 {%endfor%}
