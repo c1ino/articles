@@ -1,14 +1,14 @@
 [test-data]
 {{site.data|size}}
 
-/*
-{%for x in size.data%}
+/{
+{%for x in site.data%}
 [x]
 {{x[0]}} / {{x[1]|size}}
 [forloop]
 {{forloop|jsonify}}
 {%-endfor%}
-*/
+}/
 
 [test-folder]
 {{site.data.folder|size}}
