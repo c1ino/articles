@@ -22,7 +22,7 @@
 [md]
 |id/time|body| 
 |-|-|
-{% for x in site.data.test_cmt -%}
+{% for x in site.data.test_cmt reversed-%}
 | [{{x.id}}]({{x.html_url}}) <br>{{x.created_at}}<br>{{x.updated_at}} | {{x.body|markdownify|strip_newlines-}} | 
 {%endfor%}
 
@@ -40,7 +40,7 @@
 
 [html]
 <table>
-{% for x in site.data.test_cmt -%}
+{% for x in site.data.test_cmt reversed-%}
   <tr>
     <td> 
       
