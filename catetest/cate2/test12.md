@@ -11,22 +11,27 @@ test site.data.json
 
 
 
-|id|time|body| 
-|-|-|-|
-{% for x in site.data.test_cmt -%}
-| {{x.id}} | {{x.updated_at}} | {{x.body|markdownify|strip_newlines-}} | 
-{%endfor%}
-
-
 <table>
 {% for x in site.data.test_cmt -%}
   <tr>
     <td> {{x.id}} </td>
     <td> {{x.updated_at}} </td>
-    <td> {{x.body|markdownify-}} </td>
+    <td> 
+{{x.body}} </td>
   </tr>
 {%endfor%}
 </table>
+
+
+
+{%comment%}
+|id|time|body| 
+|-|-|-|
+{% for x in site.data.test_cmt -%}
+| {{x.id}} | {{x.updated_at}} | {{x.body|markdownify|strip_newlines-}} | 
+{%endfor%}
+{%endcomment%}
+
 
 
 {%comment%}
