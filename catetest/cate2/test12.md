@@ -18,8 +18,13 @@ test site.data.json
 
 [test escape]
 
+```
 {{site.data.test_cmt[0].body|markdownify}}
+```
+|{{site.data.test_cmt[0].body|markdownify}}|
 
+```
 {{site.data.test_cmt[0].body|markdownify|strip_newlines}}
+```
+|{{site.data.test_cmt[0].body|markdownify|strip_newlines}}|
 
-{{site.data.test_cmt[0].body|markdownify|newline_to_br}}
