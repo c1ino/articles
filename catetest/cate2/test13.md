@@ -1,3 +1,6 @@
+[test-folder]
+{{site.data.folder|size}}
+
 
 [test-cmt]
 {{site.data.test_cmt|size}}
