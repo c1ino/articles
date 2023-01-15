@@ -10,10 +10,21 @@ test site.data.json
 
 
 
+<table>
+  <tr>
+{% for x in site.data.test_cmt -%}
+  <td> {{x.id}} </td>
+  <td> {{x.updated_at}} </td>
+  <td> {{x.body-}} </td>
+{%endfor%}
+  </tr>
+</table>
+
+
 |id|time|body| 
 |-|-|-|
 {% for x in site.data.test_cmt -%}
-| {{x.id}} | {{x.updated_at}} | {{x.body|newline_to_br-}} | 
+| {{x.id}} | {{x.updated_at}} | {{x.body-}} | 
 {%endfor%}
 
 
@@ -64,3 +75,7 @@ test site.data.json
 |1|2|
 |-|-|
 | <ul><li><ul><li>3b</li></ul></li></ul> | eot |
+
+|1|2|
+|-|-|
+|3<br>4| eot |
